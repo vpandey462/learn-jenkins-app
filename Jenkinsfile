@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh 'ls -ltr'
                 sh 'grep index.html /build/index.html'
-                npm run test
+                sh 'npm run test'
             }
         }
     }
