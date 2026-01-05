@@ -49,6 +49,7 @@ pipeline {
                    npx playwright test
                 '''
             }
+        }
     }
     post {
         always {
