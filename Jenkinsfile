@@ -18,5 +18,15 @@ pipeline {
                 sh 'ls -ltr'
             }
         }
+        stage('Test') {
+            steps {
+                sh 'ls -ltr'
+                grep index.html /build/index.html
+                npm run test
+            }
+            steps {
+                sh 'npm test'
+            }
+        }
     }
 }
