@@ -21,7 +21,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'ls -ltr'
-                sh 'grep index.html /build/index.html'
+                sh 'test -f build/index.html'
                 sh 'npm run test'
             }
         }
