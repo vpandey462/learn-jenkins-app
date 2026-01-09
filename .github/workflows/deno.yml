@@ -1,0 +1,8 @@
+name: Test_workflow
+on: workflow_dispatch
+jobs:
+  first_job:
+  runs_on: ubuntu
+   steps:
+      run echo " hello world"
+      
