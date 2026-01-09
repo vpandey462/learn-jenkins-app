@@ -1,8 +1,10 @@
 name: Test_workflow
-on: workflow_dispatch
+on:
+  workflow_dispatch
 jobs:
   first_job:
-  runs_on: ubuntu
-   steps:
-      run echo " hello world"
+    runs-on: ubuntu-24.04
+    steps:
+     - name: Print hello
+       run: echo " hello world"
       
